@@ -4,10 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrate": "npx ts-node-dev -r dotenv/config src/xspace-refs-migration.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.11.0"
+  "dependencies": {
+    "contentful-management": "^11.54.1",
+    "contentful-migration": "^4.28.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "dotenv": "^17.0.1",
+    "ts-node": "^10.9.2"
+  }
 }
